@@ -1,128 +1,146 @@
-<!DOCTYPE html>
-<!-- saved from url=(0059)file:///C:/Users/admin/Downloads/lux_auto10_site_draft.html -->
-<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="LUX AUTO10 — прямой выкуп автомобилей в Петрозаводске, Карелии и на Северо-Западе. Рассмотрим автомобили любого состояния.">
-<title>LUX AUTO10 — Выкуп автомобилей</title>
+<meta name="theme-color" content="#090909">
+<title>LUXAUTO10 — Срочный выкуп автомобилей</title>
 <style>
-:root{--bg:#090909;--panel:#141414;--gold:#c9a45c;--gold2:#ead39d;--text:#f5f2eb;--muted:#b7b2a8;--line:#302a20}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
-header{position:absolute;top:0;left:0;right:0;z-index:5;border-bottom:1px solid #ffffff20}
-.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-weight:900;letter-spacing:2px;font-size:23px}.logo span{color:var(--gold)}
-.navlinks{display:flex;gap:27px;color:#e4dfd4;font-size:14px}.phone{border:1px solid var(--gold);padding:10px 16px;border-radius:3px;color:var(--gold2);font-weight:700;font-size:14px}
-.hero{min-height:720px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.76) 48%,rgba(0,0,0,.22) 100%),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=85') center/cover}
-.hero:after{content:"";position:absolute;inset:auto 0 0;height:140px;background:linear-gradient(transparent,var(--bg))}
-.hero-content{position:relative;z-index:1;padding-top:90px;max-width:700px}
+:root{--bg:#090909;--panel:#141414;--gold:#d8a84e;--gold2:#f1cf82;--text:#f7f5f0;--muted:#b8b4ac;--line:rgba(216,168,78,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:25px;font-weight:800;letter-spacing:.5px;white-space:nowrap}.logo span{color:var(--gold)}
+nav{display:flex;gap:28px;color:#ddd;font-size:14px}nav a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--gold);border-radius:999px;padding:13px 23px;background:linear-gradient(135deg,#f0ca7d,#c48d31);color:#17110a;font-weight:700;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-outline{background:transparent;color:var(--gold2)}
+.hero{min-height:570px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(5,5,5,.97) 0%,rgba(5,5,5,.82) 43%,rgba(5,5,5,.15) 100%),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85') center 58%/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:110px;background:linear-gradient(transparent,var(--bg))}
+.hero-content{position:relative;z-index:1;max-width:610px;padding:80px 0}
 .eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700}
-h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:20px 0;letter-spacing:-2px}
-h1 em{font-style:normal;color:var(--gold)}
-.lead{font-size:19px;color:#ded9cf;max-width:570px;margin-bottom:30px}
-.actions{display:flex;gap:14px;flex-wrap:wrap}.messenger-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.messenger-actions .btn{padding:11px 16px;font-size:14px}.btn.telegram{border-color:#3aa6d6;color:#d8f2ff;background:#10202a}.btn.whatsapp{border-color:#2b9b62;color:#e0ffed;background:#102218}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:3px;font-weight:800;letter-spacing:.2px;border:1px solid var(--gold);cursor:pointer}
-.btn.primary{background:var(--gold);color:#100e0a}.btn.ghost{color:var(--gold2);background:#09090980}
-.note{margin-top:20px;color:#c7c0b3;font-size:13px}
-section{padding:82px 0}.section-kicker{color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
-h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:12px 0 18px}
-.intro{max-width:680px;color:var(--muted);font-size:17px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
-.card{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:5px}
-.card .num{font-size:13px;color:var(--gold);letter-spacing:2px}.card h3{margin:12px 0 7px;font-size:20px}.card p{margin:0;color:var(--muted);font-size:14px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.benefits{display:grid;gap:18px;margin-top:25px}.benefit{display:flex;gap:14px}.check{width:27px;height:27px;flex:0 0 27px;border:1px solid var(--gold);color:var(--gold);display:grid;place-items:center;border-radius:50%;font-weight:bold}
-.photo{min-height:390px;border-radius:5px;background:linear-gradient(0deg,#0008,#0000),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85') center/cover;border:1px solid var(--line)}
-.darkband{background:#111;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}.step{padding:22px 18px;border-top:2px solid var(--gold);background:#171717}.step b{color:var(--gold);font-size:26px}.step h3{margin:10px 0 5px}.step p{color:var(--muted);font-size:14px;margin:0}
-.formbox{background:#151515;border:1px solid var(--line);padding:30px;border-radius:5px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:22px}input,select,textarea{width:100%;padding:14px;background:#0c0c0c;border:1px solid #403a30;color:var(--text);border-radius:3px;font:inherit}textarea{grid-column:1/-1;min-height:100px;resize:vertical}form button{grid-column:1/-1}
-.small{font-size:12px;color:#938d81;margin-top:12px}.form-status{margin-top:14px;font-size:14px;color:var(--gold2);min-height:1.5em}.area{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.pill{border:1px solid var(--line);padding:9px 14px;color:#d4cfc4;border-radius:30px;font-size:14px}
-footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:760px){.navlinks{display:none}.hero{min-height:680px;background-position:58% center}.grid{grid-template-columns:1fr}.split{grid-template-columns:1fr;gap:25px}.steps{grid-template-columns:1fr 1fr}form{grid-template-columns:1fr}textarea,form button{grid-column:auto}.photo{min-height:260px}section{padding:62px 0}.phone{font-size:12px;padding:9px 11px}}
-@media(max-width:420px){.steps{grid-template-columns:1fr}.logo{font-size:19px}.hero-content{padding-top:100px}}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:18px 0 20px;letter-spacing:-2px}h1 span{color:var(--gold2)}
+.hero p{font-size:19px;color:#e2ded6;max-width:500px;margin:0 0 28px}.location{color:#d7c6a4;font-size:14px;margin-top:22px}
+section{padding:78px 0}.section-title{text-align:center;font-size:clamp(28px,4vw,40px);margin:0 0 12px}.section-sub{text-align:center;color:var(--muted);margin:0 auto 36px;max-width:650px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{border:1px solid var(--line);border-radius:18px;padding:25px;background:linear-gradient(145deg,#171717,#0e0e0e);min-height:175px;transition:.2s}
+.service:hover{transform:translateY(-4px);border-color:var(--gold)}
+.service .symbol{font-size:30px;color:var(--gold2)}.service h3{margin:13px 0 6px;font-size:19px}.service p{margin:0;color:var(--muted);font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.step{padding:22px 16px;text-align:center;border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(216,168,78,.07),transparent)}
+.num{width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 13px;color:var(--gold2);font-size:20px;font-weight:700}
+.step h3{font-size:17px;margin:0 0 6px}.step p{font-size:13px;color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.feature{text-align:center;padding:20px 12px;border-right:1px solid var(--line)}.feature:last-child{border:0}.feature b{display:block;color:var(--gold2);font-size:17px;margin-bottom:5px}.feature span{color:var(--muted);font-size:13px}
+.contact{background:linear-gradient(90deg,rgba(8,8,8,.97),rgba(8,8,8,.85)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=80') center/cover;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.contact-box{max-width:760px;margin:auto;padding:36px;border:1px solid var(--line);border-radius:22px;background:rgba(13,13,13,.88);box-shadow:0 20px 60px #0008}
+.contact h2{text-align:center;font-size:36px;margin:0 0 8px}.contact .lead{text-align:center;color:var(--muted);margin:0 0 25px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:13px}input,select{width:100%;padding:16px 17px;background:#202020;border:1px solid #38332a;border-radius:10px;color:white;font-size:16px;outline:none}input:focus,select:focus{border-color:var(--gold)}select{width:100%;padding:16px 17px;background:#202020;border:1px solid #38332a;border-radius:10px;color:#b8b4ac;font-size:16px;outline:none}select option{background:#202020;color:white}
+form button{grid-column:1/-1;width:fit-content;min-width:230px;margin:8px auto 0}.note{font-size:12px;color:#999;text-align:center;margin:14px 0 0}
+footer{padding:28px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.footlinks{display:flex;gap:20px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#202020;border:1px solid var(--gold);padding:13px 18px;border-radius:12px;transition:.25s;z-index:30;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+
+.tradein-box{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:34px 40px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(circle at 85% 50%,rgba(216,168,78,.15),transparent 35%),linear-gradient(135deg,#171717,#0c0c0c)}
+.tradein-box h2{font-size:clamp(27px,4vw,38px);margin:10px 0}.tradein-box h2 span{color:var(--gold2)}.tradein-box p{max-width:650px;color:var(--muted);margin:0 0 22px}.tradein-mark{font-size:clamp(38px,7vw,76px);font-weight:900;line-height:.85;letter-spacing:-4px;color:#5b4727;text-align:center;transform:rotate(-8deg)}.tradein-mark span{color:var(--gold2)}
+.social-preview{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0 4px}.social-chip{display:inline-flex;align-items:center;justify-content:center;min-width:112px;padding:10px 17px;border:1px solid var(--line);border-radius:999px;color:var(--gold2);font-size:14px;font-weight:700;background:#171717}
+
+
+.header-phones,.contact-phones,.footer-phones{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:700;white-space:nowrap}
+.header-phones a,.contact-phones a,.footer-phones a{color:var(--gold2)}
+.header-phones a:hover,.contact-phones a:hover,.footer-phones a:hover{color:#fff}
+.contact-phones{flex-direction:row;justify-content:center;gap:24px;flex-wrap:wrap;margin:0 0 22px;font-size:18px}
+.footer-phones{flex-direction:row;gap:18px;flex-wrap:wrap}
+
+@media(max-width:800px){nav{display:none}.header-phones{font-size:12px}.hero{min-height:540px;background-position:62% center}.hero-content{padding:70px 0}.services{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2){border-right:0}}
+@media(max-width:520px){.header-phones{display:none}.tradein-box{padding:25px 20px}.tradein-mark{display:none}.wrap{width:min(100% - 28px,1160px)}.nav{height:66px}.logo{font-size:21px}.nav>.btn{padding:10px 13px;font-size:12px}.hero{min-height:520px;background-position:58% center}.hero p{font-size:16px}section{padding:58px 0}.services{grid-template-columns:1fr}.service{min-height:unset}.steps{gap:8px}.step{padding:18px 10px}.features{gap:4px}.contact-box{padding:24px 16px}.contact h2{font-size:29px}form{grid-template-columns:1fr}form button{grid-column:1;width:100%}.foot{align-items:flex-start;flex-direction:column}.footlinks{flex-wrap:wrap}}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="logo" href="#">LUX <span>AUTO10</span></a>
-  <nav class="navlinks"><a href="#about">О нас</a><a href="#cars">Какие авто выкупаем</a><a href="#steps">Как это работает</a><a href="#contact">Оценка авто</a></nav>
-  <a class="phone" href="tel:+79027714123">+7 902 771-41-23</a>
+<a class="logo" href="#top">LUX<span>AUTO10</span></a>
+<nav><a href="#services">Что выкупаем</a><a href="#advantages">Преимущества</a><a href="#steps">Как это работает</a><a href="#contact">Контакты</a></nav>
+<div class="header-phones"><a href="tel:+79027714123">+7 (902) 771-41-23</a><a href="tel:+79535408941">+7 (953) 540-89-41</a></div><a class="btn btn-outline" href="#contact">Оценить автомобиль</a>
 </div></header>
-<main>
-<section class="hero">
- <div class="wrap hero-content">
-  <div class="eyebrow">Петрозаводск · Карелия · Северо-Запад</div>
-  <h1>Выкуп автомобилей<br><em>без посредников</em></h1>
-  <p class="lead">Рассмотрим ваш автомобиль в любом состоянии. Оценка, согласование условий и оформление сделки напрямую с владельцем.</p>
-  <div class="actions"><a class="btn primary" href="#contact">Оценить автомобиль</a><a class="btn ghost" href="#steps">Как проходит выкуп</a></div>
-  <div class="note">Работаем в Петрозаводске, по всей Карелии и в регионах Северо-Запада.<br>Звонки: <a href="tel:+79535408941">+7 953 540-89-41</a><br><br><div class="messenger-actions"><a class="btn whatsapp" href="https://wa.me/79027714123?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%2C%20%D0%B3%D0%BE%D0%B4%20%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B0%3A" target="_blank" rel="noopener">Отправить фото в WhatsApp</a><a class="btn telegram" href="https://t.me/igrkslv" target="_blank" rel="noopener">Написать в Telegram</a></div><a class="btn ghost" style="padding:10px 15px" href="https://max.ru/u/f9LHodD0cOJ1m9IUQ3VhBDN0W3R2A-6YroHOvTg-TwlOpj0XTDh26jOnbFY" target="_blank" rel="noopener">MAX</a></div>
- </div>
-</section>
-<section id="cars"><div class="wrap">
- <div class="section-kicker">Рассмотрим разные варианты</div><h2>Выкупаем автомобили<br>любого состояния</h2>
- <p class="intro">Марка, возраст и техническое состояние — не повод не обращаться. Отправьте информацию и фотографии, чтобы обсудить возможность выкупа.</p>
- <div class="grid">
-  <article class="card"><div class="num">01 / СОСТОЯНИЕ</div><h3>Исправные автомобили</h3><p>Седаны, универсалы, кроссоверы и внедорожники.</p></article>
-  <article class="card"><div class="num">02 / ПОВРЕЖДЕНИЯ</div><h3>После ДТП и битые</h3><p>Рассмотрим автомобили с кузовными повреждениями.</p></article>
-  <article class="card"><div class="num">03 / ТЕХНИКА</div><h3>Неисправные автомобили</h3><p>С проблемами двигателя, коробки передач и других узлов.</p></article>
-  <article class="card"><div class="num">04 / ВОЗРАСТ</div><h3>С пробегом и старые</h3><p>Можно отправить заявку даже на автомобиль, который давно стоит без движения.</p></article>
-  <article class="card"><div class="num">05 / НАЗНАЧЕНИЕ</div><h3>Коммерческий транспорт</h3><p>Обсудим выкуп фургонов и другого коммерческого транспорта.</p></article>
-  <article class="card"><div class="num">06 / ИНДИВИДУАЛЬНО</div><h3>Нестандартные случаи</h3><p>Опишите ситуацию — отдельно рассмотрим условия и документы.</p></article>
- </div>
-</div></section>
-<section id="about" class="darkband"><div class="wrap split">
- <div><div class="section-kicker">Прямой выкуп</div><h2>Работаем напрямую с владельцем</h2>
-  <p class="intro">LUX AUTO10 — сервис прямого выкупа автомобилей. Вы обращаетесь непосредственно к покупателю, без цепочки посредников.</p>
-  <div class="benefits">
-   <div class="benefit"><div class="check">✓</div><div><b>Предварительная оценка</b><div class="small">Изучим данные и фотографии автомобиля.</div></div></div>
-   <div class="benefit"><div class="check">✓</div><div><b>Обсуждение условий заранее</b><div class="small">Согласуем детали до оформления сделки.</div></div></div>
-   <div class="benefit"><div class="check">✓</div><div><b>Оформление сделки</b><div class="small">Порядок расчёта и передачи автомобиля согласуем с вами.</div></div></div>
+<main id="top">
+<section class="hero"><div class="wrap"><div class="hero-content">
+<div class="eyebrow">LUXAUTO10 · Срочный выкуп</div>
+<h1>Срочный выкуп<br><span>автомобилей</span></h1>
+<p>Рассмотрим ваш автомобиль, обсудим условия и поможем быстро оформить сделку.</p>
+<a class="btn" href="#contact">Оценить автомобиль <span>→</span></a>
+<div class="location">⌖ Петрозаводск · Республика Карелия · Северо-Запад</div>
+</div></div></section>
+<section id="services"><div class="wrap">
+<h2 class="section-title">Какие автомобили мы выкупаем</h2><p class="section-sub">Рассмотрим ваш автомобиль и предложим условия выкупа после оценки.</p>
+<div class="services">
+<article class="service"><div class="symbol">🚘</div><h3>Исправные автомобили</h3><p>Рассмотрим предложения по автомобилям в рабочем состоянии.</p></article>
+<article class="service"><div class="symbol">🚗</div><h3>После ДТП и битые</h3><p>Оценим автомобиль с повреждениями после аварии.</p></article>
+<article class="service"><div class="symbol">🔧</div><h3>Неисправные автомобили</h3><p>Рассмотрим автомобили с техническими неисправностями.</p></article>
+<article class="service"><div class="symbol">◷</div><h3>С пробегом и старые</h3><p>Можно обратиться с автомобилем с большим пробегом.</p></article>
+<article class="service"><div class="symbol">🚚</div><h3>Коммерческий транспорт</h3><p>Рассмотрим предложения по коммерческому транспорту.</p></article>
+<article class="service"><div class="symbol">✦</div><h3>Нестандартные случаи</h3><p>Расскажите о ситуации — обсудим возможность выкупа.</p></article>
+</div></div></section>
+<section id="steps"><div class="wrap"><h2 class="section-title">Как проходит выкуп</h2><p class="section-sub">Понятные этапы от первого обращения до оформления сделки.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Заявка</h3><p>Оставляете контакты, мы связываемся с вами.</p></div>
+<div class="step"><div class="num">2</div><h3>Оценка</h3><p>Обсуждаем автомобиль и предварительные условия.</p></div>
+<div class="step"><div class="num">3</div><h3>Осмотр</h3><p>Уточняем состояние автомобиля.</p></div>
+<div class="step"><div class="num">4</div><h3>Сделка</h3><p>Согласовываем условия и оформляем документы.</p></div>
+</div></div></section>
+
+
+<section id="tradein"><div class="wrap">
+  <div class="tradein-box">
+    <div>
+      <div class="eyebrow">Дополнительная возможность</div>
+      <h2>Рассмотрим вариант <span>Trade-in</span></h2>
+      <p>Хотите обновить автомобиль? Обсудим возможность выкупа вашего автомобиля в счёт другого. Условия рассчитываются индивидуально.</p>
+      <a class="btn btn-outline" href="#contact">Обсудить Trade-in →</a>
+    </div>
+    <div class="tradein-mark" aria-hidden="true">TRADE<br><span>IN</span></div>
   </div>
- </div><div class="photo" role="img" aria-label="Автомобиль премиум-класса"></div>
 </div></section>
-<section id="steps"><div class="wrap">
- <div class="section-kicker">Просто и понятно</div><h2>Как проходит выкуп</h2>
- <div class="steps">
-  <div class="step"><b>01</b><h3>Заявка</h3><p>Расскажите об автомобиле и оставьте контакты.</p></div>
-  <div class="step"><b>02</b><h3>Оценка</h3><p>Уточним состояние, пробег, документы и фотографии.</p></div>
-  <div class="step"><b>03</b><h3>Осмотр</h3><p>Согласуем место и время осмотра автомобиля.</p></div>
-  <div class="step"><b>04</b><h3>Сделка</h3><p>При согласии сторон оформим документы и расчёт.</p></div>
- </div>
-</div></section>
-<section id="contact" class="darkband"><div class="wrap split">
- <div><div class="section-kicker">Оценка автомобиля</div><h2>Узнайте, сколько можем предложить</h2><p class="intro">Заполните форму — свяжемся с вами, уточним детали и обсудим возможность выкупа.</p>
-  <div class="messenger-actions"><a class="btn whatsapp" href="https://wa.me/79027714123?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%2C%20%D0%B3%D0%BE%D0%B4%20%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B0%3A" target="_blank" rel="noopener">Отправить фото в WhatsApp</a><a class="btn telegram" href="https://t.me/igrkslv" target="_blank" rel="noopener">Отправить фото в Telegram</a></div>
-  <p class="small">Для быстрой оценки пришлите фотографии автомобиля, марку, модель, год выпуска и кратко опишите состояние.</p>
-  <div class="area"><span class="pill">Петрозаводск</span><span class="pill">Вся Карелия</span><span class="pill">Северо-Запад</span></div>
- </div>
- <div class="formbox"><h3 style="margin:0;font-size:23px">Заявка на выкуп</h3>
-  <form id="leadform">
-    <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0" aria-label="Не заполнять">
-   <input required="" name="name" placeholder="Ваше имя">
-   <input required="" name="phone" type="tel" placeholder="Телефон">
-   <input name="car" placeholder="Марка и модель">
-   <input name="year" placeholder="Год выпуска">
-   <select name="condition"><option value="">Состояние автомобиля</option><option>На ходу</option><option>После ДТП</option><option>Неисправен</option><option>Не на ходу</option><option>Другое</option></select>
-   <input name="city" placeholder="Город / населённый пункт">
-   <textarea name="details" placeholder="Дополнительная информация: пробег, повреждения, особенности..."></textarea>
-   <button class="btn primary" type="submit">Отправить заявку</button>
-  </form>
-  <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-  <div class="small">Если удобнее, отправьте фотографии автомобиля напрямую через WhatsApp или Telegram.</div>
- </div>
-</div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box">
+<h2>Заявка на выкуп</h2><p class="lead">Оставьте имя и телефон — свяжемся с вами для обсуждения автомобиля.</p><div class="contact-phones"><a href="tel:+79027714123">+7 (902) 771-41-23</a><a href="tel:+79535408941">+7 (953) 540-89-41</a></div>
+<form id="leadform">
+<input name="name" placeholder="Ваше имя" autocomplete="name" required>
+<input name="phone" placeholder="Телефон" autocomplete="tel" type="tel" required>
+<input name="car" placeholder="Марка и модель автомобиля">
+<input name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0" aria-label="Не заполнять">
+<input name="year" placeholder="Год выпуска" inputmode="numeric">
+<select name="condition" aria-label="Состояние автомобиля">
+<option value="">Состояние автомобиля</option>
+<option>Исправный</option><option>После ДТП / битый</option>
+<option>Неисправный</option><option>С пробегом / старый</option>
+<option>Коммерческий транспорт</option><option>Другое</option>
+</select>
+<input name="city" placeholder="Город / населённый пункт">
+<textarea name="details" placeholder="Дополнительная информация: пробег, повреждения, особенности..." rows="3"></textarea>
+<button class="btn" type="submit">Отправить заявку →</button>
+</form>
+
+<div class="social-preview" aria-label="Связаться с LUXAUTO10">
+  <a class="social-chip" href="https://t.me/igrkslv" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+  <a class="social-chip" href="https://wa.me/79027714123?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D1%86%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%2C%20%D0%B3%D0%BE%D0%B4%20%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B0%3A" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+  <a class="social-chip" href="https://max.ru/u/f9LHodD0cOJ1m9IUQ3VhBDN0W3R2A-6YroHOvTg-TwlOpj0XTDh26jOnbFY" target="_blank" rel="noopener noreferrer">MAX ↗</a>
+  <a class="social-chip" href="https://vk.ru/luxauto_10" target="_blank" rel="noopener noreferrer">ВКонтакте ↗</a>
+</div>
+<p class="note">После отправки заявки данные поступят нам в Telegram.</p>
+<div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+</div></div></section>
 </main>
-<footer><div class="wrap foot"><div><b style="color:var(--gold2);letter-spacing:2px">LUX AUTO10</b><div>Прямой выкуп автомобилей</div></div><div>Петрозаводск · Республика Карелия · Северо-Запад России</div><div>Телефоны:<br><a href="tel:+79027714123"><b>+7 902 771-41-23</b></a><br><a href="tel:+79535408941"><b>+7 953 540-89-41</b></a> <span style="color:#b7b2a8">(звонки)</span><br><a href="https://wa.me/79027714123" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/igrkslv" target="_blank" rel="noopener">Telegram @igrkslv</a><br><a href="https://max.ru/u/f9LHodD0cOJ1m9IUQ3VhBDN0W3R2A-6YroHOvTg-TwlOpj0XTDh26jOnbFY" target="_blank" rel="noopener">MAX</a></div><div>© LUX AUTO10</div></div></footer>
+<footer><div class="wrap foot"><a class="logo" href="#top">LUX<span>AUTO10</span></a><div class="footlinks"><a href="#services">Выкуп</a><a href="#advantages">Преимущества</a><a href="#tradein">Trade-in</a><a href="#contact">Контакты</a><a href="https://vk.ru/luxauto_10" target="_blank" rel="noopener noreferrer">Группа ВК ↗</a></div><div class="footer-phones"><a href="tel:+79027714123">+7 (902) 771-41-23</a><a href="tel:+79535408941">+7 (953) 540-89-41</a></div><span>© LUXAUTO10</span></div></footer>
 <script>
-document.getElementById('leadform').addEventListener('submit', async function(e) {
+document.getElementById('leadform').addEventListener('submit', async function (e) {
   e.preventDefault();
   const form = e.currentTarget;
   const button = form.querySelector('button[type="submit"]');
   const status = document.getElementById('form-status');
   const data = Object.fromEntries(new FormData(form).entries());
+
   status.textContent = 'Отправляем заявку…';
   button.disabled = true;
   button.textContent = 'Отправка…';
+
   try {
     const response = await fetch('/.netlify/functions/lead', {
       method: 'POST',
@@ -130,14 +148,16 @@ document.getElementById('leadform').addEventListener('submit', async function(e)
       body: JSON.stringify(data)
     });
     const result = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(result.error || 'Не удалось отправить заявку. Попробуйте связаться с нами по телефону.');
+    if (!response.ok) {
+      throw new Error(result.error || 'Не удалось отправить заявку. Попробуйте связаться с нами по телефону.');
+    }
     form.reset();
     status.textContent = 'Спасибо! Заявка отправлена. Мы свяжемся с вами.';
   } catch (error) {
     status.textContent = error.message || 'Ошибка отправки. Попробуйте ещё раз или позвоните нам.';
   } finally {
     button.disabled = false;
-    button.textContent = 'Отправить заявку';
+    button.textContent = 'Отправить заявку →';
   }
 });
 </script>
